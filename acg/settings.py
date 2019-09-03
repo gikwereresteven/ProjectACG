@@ -200,7 +200,8 @@ CMS_TEMPLATES = (
     ('about.html', 'about_us'),
     ('contact.html','contact_us'),
     ('footer_word.html','footer'),
-    ('imbuto.html','imbuto')
+    ('imbuto.html','imbuto'),
+    ('imishwi.html','imishwi'),
 )
 
 CMS_PERMISSION = True
