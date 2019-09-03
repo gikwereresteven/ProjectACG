@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+	{% placeholder "ifumbire-ihendutse" %}
+	<div class="text-center top-space">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2">
+				</div>
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="col-sm-8">
+							{% placeholder "slide-show" %}
+						</div>
+						<div class="col-sm-4">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+				</div>
+			</div>
+		</div>
+	</div>
+		  <!-- The end of the upper part containing slide and pub part -->
+		  <div class="container-fluid main-body">
+				<div class="row">
+				  <div class="col-sm-1">
+					
+				  </div>
+				  <div class="col-sm-2 imbuto-menu">
+					<ul class="list-group">
+					  <li class="list-group-item d-flex justify-content-between align-items-center">
+						<div class="col">
+						  <input type="text" class="form-control" placeholder="Search">
+						</div>
+					  </li>
+					  <li class="list-group-item d-flex justify-content-between align-items-center">
+						<ul class="nav flex-column">
+							<li class="nav-item active">
+								<a class="nav-link " href="{% url 'imbuto' %}">Imbuto</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="{% url 'imishwi' %}">Imishwi</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{% url 'ifumbire' %}">Ifumbire</a>
+							</li>
+							<!-- <li class="nav-item">
+								<a class="nav-link" href="#">Link</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled" href="#">Disabled</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Active</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Link</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Link</a>
+							</li> -->
+						</ul>
+					  </li>
+					</ul>
+				  </div>
+				  <div class="col-sm-7">
+					<div class="album py-5">
+					  <div class="container">
+						<div class="row">
+							{% placeholder "one-product" %}
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  <div class="col-sm-2">
+					
+				  </div>
+				</div>
+			  </div>
+{% endblock content %}

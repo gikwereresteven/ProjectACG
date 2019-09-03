@@ -1,0 +1,27 @@
+
+    {% for child in children %}
+    <!-- no child pages  -->
+            {% if child.is_leaf_node %}
+                <li class="nav-item {% if 'blog' in request.path and child.get_menu_title == 'BLOG' %} active {% endif %} {% if child.selected %} active {% endif %}"><a href="{{ child.get_absolute_url }}" class="nav-link">{{child.get_menu_title }}</a></li>
+            {% endif %}
+    <!-- /no child pages  -->
+    <!-- has child pages  -->
+            {% if not child.is_leaf_node or child.ancestor %}
+                <li class="nav-item ml-4 dropdown {% if child.ancestor %} active {% endif %}">
+                    <a class="nav-link dropdown-toggle w3-bar-item" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                    {{child.get_menu_title }}
+                </a>
+                <div class="dropdown-menu sub-menu-dropdown border-0 dropdown-content" aria-labelledby="navbarDropdown">
+              {% if child.get_descendants %}
+                        {% for kid in child.get_descendants %}
+              <a class="second-menu dropdown-item" href="{{ kid.get_absolute_url }}">
+                            {{kid.get_menu_title }}
+                        </a>
+                        {% endfor %}
+                    {% endif %}
+            </div>
+                </li>
+            {% endif %}
+    <!-- /has child pages  -->
+        {% endfor %} 
+    <!-- /end for child -->

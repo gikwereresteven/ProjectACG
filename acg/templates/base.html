@@ -1,0 +1,305 @@
+{% load i18n cms_tags menu_tags sekizai_tags %}
+ <!DOCTYPE html>
+<html lang="{{LANGUAGE_CODE}}">
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+<meta name="author" content=""> 
+   <title>DjangoCmsCode</title>
+  
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/acg/css.css">      
+        <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   {% render_block "css" %}
+    <head>
+        <title>{% block title %}This is my new project home page{% endblock title %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+            #nav-bar{
+	            position: sticky;
+	            top: 0;
+	            z-index: 10;
+                }
+            .navbar-brand img{
+                width: 100px;
+                height:37px;
+               border-radius:10px;
+                }
+                .fa-bars{
+                        color: #fff;
+                        font-size: 30px !important;
+                    }
+                .navbar{
+                  background:rgb(130, 148, 241);
+                  margin-top: 0px;
+                }
+                .carsousel{
+                  margin-top: 15px;
+                }
+            
+            .ul {
+                list-style-type: none;
+                margin: 5px;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                margin-left: 50px;
+                width: 80px;
+                }
+                .nav-bar{
+                  background: cornflowerblue;
+                }
+            .navbar-nav li{
+	            padding: 0 10px;
+                    }
+            .navbar-nav li a{
+	            color: #fff !important;
+	            font-weight: 600;
+                    }
+            .nav li {
+                display:block;
+                list-style-type: none;
+                padding-right: 20px;
+                text-decoration-line: none;
+                color: white; 
+            }
+            .navbar-nav li{
+                padding: 0 10px;
+                    }
+
+            .nav-item a {
+                color:white;
+            }
+             .nav li a {
+                display: block;
+               color: #333;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                width: 80px;
+                 margin-left: 20px;
+            }
+             .ul li a:hover {
+                 background-color: rgba(87, 66, 66, 5.096);
+                 width: 115px;
+            }
+            .loremcontainer{
+                width: 100%;
+                height: 30%;
+                background-color: cadetblue;
+                color: black;
+            }
+        
+            .arcword{
+                padding: 70px;
+            }
+            .content {
+                float: left;
+                width: 80%;
+            }
+            .sidebar {
+                float: left;
+                width: 20%;
+            }
+            .btn-dark{
+                color: white;
+                text-decoration: none;
+                background-color: #333;
+            }
+            .buttongetstarted{
+                margin-left: 750px;
+                color: white;
+                text-decoration: none;
+                background-color: #333;
+               height: 150px; 
+               width: 170px;
+            }
+            .startpage{
+                color: white;
+            }
+            .alertsecond{
+                width: 100%;
+            }
+            .alert-arrow-down {
+                width: 100%;
+            }
+           .quotes{
+                width: 100%;
+                background-color: #333;
+                color: white;
+                height: 200px;
+            } 
+            .nav-link{
+                color: #333;
+            }
+             .fa-facebook{
+                 padding: 5px;   
+                 left:45%;
+                text-align: center;             
+            }
+            .fa-instagram{
+               padding: 5px;
+            }
+            .fa-twitter{
+               padding: 5px;
+            }
+            .fa-linkedin{
+                padding: 5px;
+            }
+            .third-style{
+                width: 100%;
+                margin-left: 0px;
+            }
+            style-icon{
+                line-height: 100px;
+                vertical-align: middle
+            }
+        .rowsize{
+            margin: 0px;
+            padding: 50px;
+            margin-top: -20px;
+            width: 100%;
+        }
+        .iconsheep{
+            margin-left: 70px;
+        }
+        .alert-icon{
+            margin-top: -9px;
+        }
+        .carsousel{
+          margin-top: 10px;
+          background:cornflowerblue;
+          width: 100%;
+        }
+        .row-slide{
+            background-color: rgb(11, 11, 133);
+            width: 100%;
+            height: 40%;
+           
+        }
+        .contact-form{
+            margin-top:150px;
+        }
+        .services {
+            margin-top: -17px;
+        }
+        .row-background{
+            background-color:#c1cac128;
+           
+        }
+        .services-backround{
+            background-color:#c1cac128;
+           
+        }
+        .about_image-height{
+            height: 220px;
+            width: 70%;
+            margin-top: 180px;
+            margin-left: 70px;
+          
+        }
+        .footerblue{
+            
+            width: 100%;
+            margin-top: -10px;
+            background-color:#011A98;
+            color: white;
+        }
+        .formcontact{
+            margin-top: 400px;
+        }
+        .clasformstyle{
+            margin-top: 50px;
+        }
+        .top-space{
+            background-color: #799038;
+        }
+        .size-imbuto{
+            background-color: #799038;
+            width: 200px;
+            height: 50px;
+        }
+       .product-name{
+           margin-left: 70px;
+       }
+        .imbito1{
+        border-radius: 50%;
+        
+        background-color: #c1cac128
+        }
+        .imbuto_text{
+            margin-top: 50px;
+            margin-left: 250px;
+            padding-left: 50px;
+        }
+        .imbuto-menu{
+            /* margin-top: 63px; */
+            margin-top: 90px;
+        }
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+        padding: 6px;
+        text-align: center;
+        background-color: #f1f1f1;
+        margin-top: 50px;
+        }
+        /* #body-imbuto{
+        border-radius: 50px;
+        background-color: #333;
+        } */
+        .imbuto-colomun{
+            border-radius: 50px;
+            background-color: #333;
+        }
+     </style>
+        {% render_block "css" %}
+    </head>
+    <body>
+        
+        {% cms_toolbar %} 
+       
+        {% load menu_tags %}
+        
+            <section id="nav-bar"> 
+                <nav class="navbar fixed-top navbar-expand-lg">
+                        <div class="container">
+                                {% load static %}
+                          <a class="navbar-brand" href="/en"> 
+                            <img src="{% static "../static/acg.jpeg" %}"></a>
+                          <button class="navbar-toggler navbar-toggler-right" 
+                          type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i class="fa fa-bars"></i>
+                            </span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarResponsive">
+                           
+                            <ul class="navbar-nav">
+                               <li class="nav-item"> 
+                {% show_menu 0 100 100 100 "menu.html"%}
+            </li>
+            </ul>
+        </div>
+      </div>
+    </nav> 
+       </section> 
+        {% block content %}
+        {% endblock content %}
+        
+       <footer>
+           {%  static_placeholder "footer" %}
+       </footer>
+    </div>
+        {% render_block "js" %}
+        
+          
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+    </body>
+</html>

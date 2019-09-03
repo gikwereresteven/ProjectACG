@@ -1,0 +1,279 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+	{% placeholder "imishwi-yinkonko" %}
+	<div class="text-center top-space">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2">
+				</div>
+				<div class="col-sm-8">
+					<div class="row">
+						<div class="col-sm-8">
+							{% placeholder "slide-show" %}
+						</div>
+						<div class="col-sm-4">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+				</div>
+			</div>
+		</div>
+	</div>
+		  <!-- The end of the upper part containing slide and pub part -->
+		  <div class="container-fluid main-body">
+				<div class="row">
+				  <div class="col-sm-1">
+					
+				  </div>
+				  <div class="col-sm-2">
+					<ul class="list-group imbuto-menu">
+					  <li class="list-group-item d-flex justify-content-between align-items-center">
+						<div class="col">
+						  <input type="text" class="form-control" placeholder="Search">
+						</div>
+					  </li>
+					  <li class="list-group-item d-flex justify-content-between align-items-center">
+						<ul class="nav flex-column">
+							<li class="nav-item active">
+								<a class="nav-link " href="{% url 'imbuto' %}">Imbuto</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="{% url 'imishwi' %}">Imishwi</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{% url 'ifumbire' %}">Ifumbire</a>
+							</li>
+							<!-- <li class="nav-item">
+								<a class="nav-link" href="#">Link</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled" href="#">Disabled</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Active</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Link</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Link</a>
+							</li> -->
+						</ul>
+					  </li>
+					</ul>
+					
+				  </div>
+				  <div class="col-md-2">
+						<div class="album py-5">
+								<div class="card"> {% load static %}
+										<img src="{% static "../static/eggcook.png" %}"><br>
+									<b>fruits</b>
+									</div>
+						</div>
+				  </div>
+				  <div class="col-md-2">
+						<div class="album py-5">
+								<div class="card"> {% load static %}
+										<img src="{% static "../static/imishwi.png" %}"><br>
+									<b>fruits</b>
+									</div>
+						</div>
+				  </div>
+				  <div class="col-md-2">
+						<div class="album py-5">
+								<div class="card"> {% load static %}
+										<img src="{% static "../static/egs.png" %}"><br>
+									<b>fruits</b>
+									</div>
+						</div>
+				  </div>
+				  <div class="col-md-2">
+						<div class="album py-5">
+								<div class="card"> {% load static %}
+										<img src="{% static "../static/isahani.jpg" %}"><br>
+									<b>fruits</b>
+									</div>
+						</div>
+				  </div>
+				  <!-- <div class="col-md-2">
+						<div class="album py-1">
+								<div class="card"> {% load static %}
+										<img src="{% static "../static/amatunda.png" %}"><br>
+									<b>fruits</b>
+									</div>
+						</div>
+				  </div> -->
+				  <div class="container">
+						<div class="row">
+							<div class="col-md-3">
+								  <div class="album py-1">
+										  <div class="card"> 
+												<br>{% load static %}
+												  <img src="{% static "../static/icare.png" %}"><br>
+											  <b>fruits</b>
+											  </div>
+								  </div>
+							</div>
+							<div class="col-md-3">
+								  <div class="album py-1">
+										  <div class="card">
+												<br> {% load static %}
+												  <img src="{% static "../static/inkoko.png" %}"><br>
+											  <b>fruits</b>
+											  </div>
+								  </div>
+							</div>
+							<div class="col-md-3">
+								  <div class="album py-1">
+										  <div class="card"> {% load static %}
+												  <img src="{% static "../static/two.jpg" %}"><br>
+											  <b>fruits</b>
+											  </div>
+								  </div>
+							</div>
+							<div class="col-md-3">
+								  <div class="album py-1">
+										  <div class="card">
+												 {% load static %}
+												  <img src="{% static "../static/isake.png" %}"><br>
+											  <b>fruits</b>
+											  </div>
+								  </div>
+							</div>
+							<!-- <div class="col-md-3">
+								  <div class="album py-1">
+										  <div class="card"> {% load static %}
+												  <img src="{% static "../static/igi.jpg" %}"><br>
+											  <b>fruits</b>
+											  </div>
+								  </div>
+							</div> -->
+							<!-- <div class="col-md-2">
+								  <div class="album py-1">
+										  <div class="card"> {% load static %}
+												  <img src="{% static "../static/amatunda.png" %}"><br>
+											  <b>fruits</b>
+											  </div>
+								  </div>
+							</div> -->
+						</div>
+					</div>
+				  
+				  <div class="container">
+					  <div class="row">
+						  <div class="col-md-3">
+								<div class="album py-1">
+										<div class="card">
+												<br>
+												 {% load static %}
+												<img src="{% static "../static/igi.jpg" %}"><br>
+											<b>fruits</b>
+											<br>
+											<p></p>
+											</div>
+								</div>
+						  </div>
+						  <div class="col-md-3">
+								<div class="album py-1">
+										<div class="card"> {% load static %}
+												<img src="{% static "../static/isa.png" %}"><br>
+											<b>fruits</b>
+											</div>
+								</div>
+						  </div>
+						  <div class="col-md-3">
+								<div class="album py-1">
+										<div class="card"> {% load static %}
+												<img src="{% static "../static/inkokon.jpg" %}">
+												<br>
+												<br>
+											<p></p>
+											<b>fruits</b>
+											
+											</div>
+								</div>
+						  </div>
+						  <div class="col-md-3">
+								<div class="album py-1">
+										<div class="card"> {% load static %}
+												<img src="{% static "../static/yoo.jpg" %}"><br>
+												<br>
+											<p></p>
+											<b>fruits</b>
+											</div>
+								</div>
+						  </div>
+						  <!-- <div class="col-md-2">
+								<div class="album py-1">
+										<div class="card"> {% load static %}
+												<img src="{% static "../static/amatunda.png" %}"><br>
+											<b>fruits</b>
+											</div>
+								</div>
+						  </div> -->
+						  <!-- <div class="col-md-2">
+								<div class="album py-1">
+										<div class="card"> {% load static %}
+												<img src="{% static "../static/amatunda.png" %}"><br>
+											<b>fruits</b>
+											</div>
+								</div>
+						  </div>
+					  </div> -->
+				  <!-- </div> -->
+				</div>
+				</div>
+			  </div>
+			  <br>
+			  
+				 
+			  
+
+
+
+
+			  <!-- <div class="container text-center">
+					<div section="hello">
+							
+					  <div class="row">
+							<div class="album py-5">
+						<div class="col-md-3">
+								<div class="card"> {% load static %}
+										<img src="{% static "../static/amatunda.png" %}"><br>
+										<b>fruits</b></div>
+						</div>
+					  </div>
+						</div>
+						<div class="album py-5">
+						<div class="col-md-3">
+								<div class="card"> {% load static %}
+										<img src="{% static "../static/amatunda.png" %}"><br>
+										<b>fruits</b></div>
+						</div>
+						 </div>
+						</div>
+						 <div class="col-md-3">
+								<div class="card"> {% load static %}
+										<img src="{% static "../static/amatunda.png" %}"><br>
+										<b>fruits</b></div>
+						</div>
+						   </div>
+						   <div class="col-md-3">
+								<div class="card"> {% load static %}
+										<img src="{% static "../static/amatunda.png" %}"><br>
+										<b>fruits</b></div>
+						</div>
+								 </div>
+			 
+					  </div>
+					</div>
+				  </div>
+				  </div>
+			   -->
+{% endblock content %}
