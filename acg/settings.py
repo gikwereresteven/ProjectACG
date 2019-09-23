@@ -77,7 +77,7 @@ STATICFILES_FINDERS = (
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'acg', 'templates'),],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),],
         'OPTIONS': {
             'context_processors': [
                 'django.contrib.auth.context_processors.auth',
@@ -199,9 +199,11 @@ CMS_TEMPLATES = (
     ('default.html', 'default-template'),
     ('about.html', 'about_us'),
     ('contact.html','contact_us'),
+    ('contact_us.html', 'contactapp'),
     ('footer_word.html','footer'),
     ('imbuto.html','imbuto'),
     ('imishwi.html','imishwi'),
+    ('ifumbire.html', 'ifumbire'),
 )
 
 CMS_PERMISSION = True

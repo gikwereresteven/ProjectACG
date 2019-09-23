@@ -1,11 +1,13 @@
 from django import forms
-from .models import  ContactTable
+from django.conf import settings
+from .models import ContactTable
+from django.forms import ModelForm
 
 
 class ContactForm(forms.ModelForm):
-    firstname = forms.CharField(max_length=100,widget=forms.TextInput(attrs={'size':'30','class':'inputText'}))
-    email= forms.EmailField( max_length=100,widget=forms.TextInput(attrs={'size':'30','class':'inputText'}))
-    message = forms.CharField(widget=forms.Textarea(attrs={"rows":5, "cols":30}))
+    firstname = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control'}),required=True)
+    email = forms.EmailField(widget=forms.EmailInput(attrs={'class':'form-control'}),required=True)
+    message = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control'}),required=True)
     class Meta:
-        model:ContactTable
+        model = ContactTable
         fields = ('firstname','email','message')

@@ -54,7 +54,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <div class="album py-5">
                   <div class="container">
                     <div class="row ">
@@ -62,10 +62,7 @@
                         <h2>Details About Fruits we have</h2>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, 
-                     sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                       </div>
 
                     </div>
@@ -80,24 +77,29 @@
           <div class="container ">
           <section id="body-imbuto">
              <div class="row">
-                <div class="col-md-4 ">
-                    {% load static %}
-                    <img src="{% static "../static/amatunda.png" %}"><br>
-    
-                   <b class="product-name">Passion</b>
+                <div class="col-md-3 ">
+                    
                     </div>
-               <div class="col-md-4">
+               <div class="col-md-3">
                 {% load static %}
-                <img src="{% static "../static/apple.png" %}"><br>
+                <img style="width: 70%"; src="{% static "../static/apple.png" %}">
+                <p></p>
 
-               <b class="product-name">Pineaple</b>
+               <b class="product-name">Pome</b>
                 </div>
-               <div class="col-md-4">
+               <div class="col-md-3">
                     {% load static %}
-                    <img style="width: 50%" src="{% static "../static/avoca.png" %}" >
+                    <img style="width: 70%"; src="{% static "../static/avoca.png" %}" >
                     <p></p>
                   <b class="product-name">Avocat</b>
                  </div>
+                 <div class="col-md-3">
+                  {% load static %}
+                  <img style="width: 70%" height="180px;" src="{% static "../static/inke.jpg" %}" >
+                 
+                  <p></p>
+                <b class="product-name">strawberries</b>
+               </div>
              </div>
             </section>
             </div>
@@ -105,26 +107,24 @@
                 <section id="body-imbuto">
                    <div class="row">
                       <div class="col-md-3">
-                          {% load static %}
-                          <img src="{% static "../static/orage.png" %}"><br>
-          
-                         <b class="product-name">Orange</b>
+                         
                           </div>
                      <div class="col-md-3">
                       {% load static %}
-                      <img src="{% static "../static/banana.png" %}"><br>
-      
+                      <img style="width: 70%" src="{% static "../static/banana.png" %}">
+                      <p></p>
+      <p></p>
                      <b class="product-name">Bananas</b>
                       </div>
                      <div class="col-md-3">
                           {% load static %}
-                          <img src="{% static "../static/waterm.png" %}" >
+                          <img  style="width: 70%"; src="{% static "../static/watermellon.jpg" %}">
                           <p></p>
                         <b class="product-name">Watermelon</b>
                        </div>
                        <div class="col-md-3">
                           {% load static %}
-                          <img src="{% static "../static/mango.png" %}" >
+                          <img style="width: 70%"; src="{% static "../static/mang.jpg" %}" >
                           <p></p>
                         <b class="product-name">Mangos</b>
                        </div>
@@ -135,26 +135,25 @@
                       <section id="body-imbuto">
                          <div class="row">
                             <div class="col-md-3">
-                                {% load static %}
-                                <img src="{% static "../static/papa.png" %}"><br>
-                
-                               <b class="product-name">Papaya</b>
+                               
                                 </div>
                            <div class="col-md-3">
                             {% load static %}
-                            <img src="{% static "../static/nana.jpg" %}"><br>
+                            <img style="width: 70%" src="{% static "../static/nana.jpg" %}">
+                             <p></p>
                            <b class="product-name">Pineaple</b>
                             </div>
                            <div class="col-md-3">
                                 {% load static %}
-                                <img src="{% static "../static/ibinyomoro.png" %}" ><br>
+                                <img style="width: 70%" src="{% static "../static/ibinyomoro.png" %}" >
+                                 <p></p>
                              
                               <b class="product-name">Ibinyomoro</b>
                              
                              </div>
                              <div class="col-md-3">
                                 {% load static %}
-                                <img src="{% static "../static/indimuq.png" %}" ><br>
+                                <img style="width: 70%"; src="{% static "../static/indi.jpg" %}" >
                                 <p></p>
                               <b class="product-name">Indimu</b>
                              
@@ -163,8 +162,40 @@
                          </div>
                         </section>
                         </div>
+                        <div class="container">
+                            <section id="body-imbuto">
+                               <div class="row">
+                                  <div class="col-md-3">
+                                    
+                                  </div>
+                                 <div class="col-md-3">
+                                    {% load static %}
+                                    <img style="width: 70%"; src="{% static "../static/amatunda.png" %}">
+                                    <p></p>
+                                   <b class="product-name">Passion</b>  
+                                  </div>
+                                 <div class="col-md-3">
+                                    {% load static %}
+                                    <img style="width: 70%" src="{% static "../static/orage.png" %}">
+                                    <p></p>
+                    
+                                   <b class="product-name">Orange</b>
+                                   
+                                   </div>
+                                   <div class="col-md-3">
+                                      {% load static %}
+                                      <img style="width: 75%"; src="{% static "../static/papa.png" %}">
+                                      <p></p>
+                      
+                                     <b class="product-name">Papaya</b>
+                                   
+                                   </div>
+                                   
+                               </div>
+                              </section>
+                              </div>
                            <br> 
-            <!-- <div class="container">
+             <!-- <div class="container">
             <div class="row">
               <div class="col-md-3">
                 <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
@@ -199,8 +230,8 @@
                   <h5 class="card-title">Dark card title</h5>
                   <p class="card-text">Quick sample text to create the card title and make up the body of the card's content.</p>
                 </div></div>
-            </div>
-            </div>
             </div> -->
+            </div>
+            </div>
          
 {% endblock content %}

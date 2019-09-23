@@ -220,6 +220,14 @@
 
             .contact-form {
                 margin-top: 150px;
+                box-shadow: 2px 0px 50px 2px #888888;
+                text-align: center;
+                text-emphasis: size;
+                background-color: #b3bbb302;
+                color:rgb(49, 36, 36);
+            }
+            .text-center {
+                margin-top: 10px;
             }
 
             .services {
@@ -227,21 +235,36 @@
             }
 
             .row-background {
-                background-color: #c1cac128;
+                background-color: #b3bbb302;
+                width: 100%;
+                box-shadow: 10px 10px 8px 10px #888888;
 
             }
 
             .services-backround {
-                background-color: #c1cac128;
-
+                background-color: #abadab28;
+                padding:20px;
+                width: 100%;
+                
+            } 
+            .project-vision-mission{
+                box-shadow: 10px 10px 8px #888888;
             }
 
             .about_image-height {
-                height: 220px;
-                width: 70%;
-                margin-top: 180px;
-                margin-left: 70px;
-
+                height: 250px;
+                width: 90%;
+                margin-top: 100px;
+                box-shadow: 20px 20px 10px #888888;
+                /* margin-left: 20px; */
+            }
+            .awasome{
+                margin-top: 5%;
+                margin-bottom: 7%;
+               
+                height: 50%;
+                padding-top: 30px;
+                
             }
 
             .footerblue {
@@ -271,7 +294,10 @@
             }
 
             .product-name {
-                margin-left: 70px;
+              
+               margin-top:150px; 
+               
+                margin-left: 50px;
             }
 
             .imbito1 {
@@ -282,8 +308,11 @@
 
             .imbuto_text {
                 margin-top: 50px;
-                margin-left: 250px;
+                margin-left: 20px;
                 padding-left: 50px;
+            }
+            #body-imbuto{
+                margin-left:20px;
             }
 
             .imbuto-menu {
@@ -292,7 +321,7 @@
             }
 
             .card {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                box-shadow: 15px 15px 8px 10px rgba(0, 0, 0, 0.2);
                 /* this adds the "card" effect */
                 padding: 6px;
                 text-align: center;
@@ -300,16 +329,112 @@
                 margin-top: 50px;
             }
 
-            /* #body-imbuto{
-        border-radius: 50px;
-        background-color: #333;
-        } */
+            .form-inline{
+                float: right;
+            }
             .imbuto-colomun {
                 border-radius: 50px;
                 background-color: #333;
             }
             .d-block{
                 height: 700px;
+            }
+            .ifumbile-style{
+                /* background-color: rgba(53, 62, 78, 0.856); */
+                background: rgba(130, 148, 241, 0.452);
+                height:auto;
+            }
+            .columun-container{
+                margin-top: 30px;
+            }
+            .ifumbire-picture{
+                margin-top: 50px;
+                width: 100%;
+                height: 200px;
+            }
+            /* .imfumbire-center{
+                background-color: #545f3769;
+            }
+            .column-imbire2{
+                margin-top: 10px;
+            } */
+            .image-border{
+                width: 100px;
+                height: 100px;
+             border-radius: 50%;
+             margin-left: 150px;
+             margin-top: 20px;
+            }
+            .ifumbire-image img{
+                width: 100%;
+                height: 300px;
+                
+            }  
+            .border-image{
+                width: 50%;
+                height: 50%;
+                border-radius: 50%;
+            }
+            .card-body .border-image{
+               
+                border-radius: 50%;
+                text-align: center;
+                display: block;
+                 margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            #ifumbire-color{
+                background-color:  #011A98;
+                color:#f1f1f1;
+            }
+            .container h2{
+               text-align: center;
+               font-weight: 400; 
+               color:rgba(46, 87, 63, 0.842); 
+               
+            }
+            .card-imbure{
+                width: 300px;
+                height: 200px;
+            }
+            .imfumbire-column{
+                margin-top: 20px;
+            }
+            .design-bground .card{
+                color:black;
+                }
+                /* background-color: rgb(130, 148, 241); */
+            /* .card-title{
+                text-align: center;
+                padding-top: 50px;
+                padding-bottom:50px; 
+            } */
+            .contact-form{
+                margin-top: 10px;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+
+            }
+            .contact-title {
+                margin-top: 20px;
+                padding-top: 20px;
+                margin-bottom: 20px;
+                color: #799038;
+                font-size: 30px;
+            }
+            .btn-success{
+                text-align: center;
+                background-color: rgba(23, 126, 100, 0.801);
+              
+            }
+            .card-img-top{
+                width: 100%;
+                height: 120px;
+            }
+            .imishwi_images{
+                width: 100%;
+                height: 150px;
             }
         </style>
         {% render_block "css" %}
@@ -339,11 +464,12 @@
                             {% show_menu 0 100 100 100 "menu.html"%}
                         </li>
                     </ul>
+                    <form class="form-inline my-2 my-lg-0 text-right">
+                            <input class="form-control mr-sm-3" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                          </form>
                 </div>
-                <form class="form-inline my-2 my-lg-">
-                        <input class="form-control mr-sm-3" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-                      </form>
+               
             </div>
         </nav>
         

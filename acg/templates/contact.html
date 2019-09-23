@@ -1,41 +1,65 @@
-{% extends "base.html" %}
+{% extends "/base.html" %}
 
 
-{% load cms_tags %}
+<html>
 
-{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+<body>
 
-{% block content %}
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-4">
-                <p>Hi there!</p>
-                <p>It works!</p>
+
+  <div class="col-md-4">
+    {% block title %}Start a New Topic{% endblock %}
+
+    {% block breadcrumb %}
+    <li class="breadcrumb-item"><a href="{% url 'home' %}">Boards</a></li>
+    <li class="breadcrumb-item"><a href="{% url 'board_topics' board.pk %}">{{ board.name }}</a></li>
+    <li class="breadcrumb-item active">New topic</li>
+    {% endblock %}
+    {% block content %}
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3">
+          <!-- {%load static%}
+                                <img  src="{% static "../static/ifumbi.jpg" %}"> -->
         </div>
-        
-        <div class="col-md-4">
-            
-                <h2>New post</h2>
-                <form method="POST" class="post-form">{% csrf_token %}
-                    {{ form.as_p }}
-                    <button type="submit" class="save btn btn-default">Save</button>
-                </form>
-        </div>  
-        <div class="col-sm-4">
-                <p>Hi there!</p>
-                <p>It works!</p>
+        <div class="col-md-6">
+          <form action="" method="POST" class="contact-form">
+
+            {% csrf_token %}
+            <div class="form-group">
+
+              <div class="contact-title">
+                <h4"> Contact us here:</h4>
+              </div>
+              <label for="id_firstname"><b>Name</b></label>
+              <input type="text" class="form-control" id="id_subject" name="firstname">
+            </div>
+            <div class="form-group">
+              <label for="id_email"><b>Email</b></label>
+              <input type="email" class="form-control" id="id_email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="id_message"><b>Message</b></label>
+              <textarea class="form-control" id="id_message" name="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Send Message</button>
+          </form>
         </div>
+        <div class="col-md-3">
+          <!-- {%load static%}
+                                    <img  src="{% static "../static/ifumbi.jpg" %}"> -->
+        </div>
+
+
+      </div>
     </div>
-</div>
-{% placeholder content or %} 
+    <p></p>
+    {% endblock %}
+</body>
 
-     
-   
-{% endplaceholder %}
+</html>
 
-{% endblock content %}
 
 <footer>
-    {% include "footer_word.html" %} 
+  {% include "footer_word.html" %}
 </footer>
- 
